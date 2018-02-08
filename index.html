@@ -1,0 +1,11 @@
+---
+layout: default
+title: This is my page
+---
+
+<p><b>another hello world</b></p>
+
+{% for person in site.data.people %}
+  <h2>{{ person.name }}</h2>
+  <p>{{ person.id }}</p>
+{% endfor %}
